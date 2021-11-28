@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/VASHvic/Node/issues"
   },
-  "homepage": "https://github.com/VASHvic/Node#readme"
+  "homepage": "https://github.com/VASHvic/Node#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }
