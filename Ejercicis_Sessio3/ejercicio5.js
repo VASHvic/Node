@@ -6,21 +6,19 @@ async function main() {
 }
 main().catch((err) => console.log(err));
 
-// const web = https://www.geeksforgeeks.org/mongoose-find-function/?ref=lbp
-
 Libro.find({ precio: { $gt: 10 } }, function (err, docs) {
   if (err) {
     console.log(err);
   } else {
-    console.log("First function call : ", docs);
+    console.log("Libros con precio mayor a 10 : ", docs);
   }
 });
 
-var id = "61a9293c70777d7c7b5b8b18";
+var id = "61ae1ab49426ced477250d35";
 Libro.findById(id, function (err, docs) {
   if (err) {
     console.log(err);
   } else {
-    console.log("Result : ", docs);
+    console.log("Resultado de la búsqueda por ID : ", docs);
   }
 });

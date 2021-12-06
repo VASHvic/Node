@@ -4,15 +4,18 @@ const mongoose = require("mongoose");
 async function main() {
   await mongoose.connect("mongodb://localhost:27017/ejercici3");
 }
+
+main().catch((err) => console.log(err));
+
 const libro1 = new Libro({
-  titulo: "El capitán pescanova",
+  titulo: "El capitán Alatriste",
   editorial: "Alfaguara",
-  precio: 1,
+  precio: 12,
 });
 const libro2 = new Libro({
-  titulo: "El juego de Bender",
-  editorial: "Ediciones C",
-  precio: 87.95,
+  titulo: "El juego de ender",
+  editorial: "Ediciones B",
+  precio: 8.95,
 });
 
 libro1
